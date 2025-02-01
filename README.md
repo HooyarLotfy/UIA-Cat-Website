@@ -19,4 +19,9 @@ Welcome to the Uia Cat Interactive Experience! This web app lets you click on bu
 
 ---
 
+## Credits 💻  
+Developed by **Hooyar Lotfy**. 🙌  
+
+---
+
 Yeah, let’s cook some Uia Cat magic and make this the most epic meme experience ever! 🐾💥

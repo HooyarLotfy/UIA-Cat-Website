@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+    
+  }
+  body {
+    background: linear-gradient(-45deg, #6f00ff, #110022, #51158c, #210042);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+
+  }
+
+  .nav-link:hover {
+    animation: section 2s ease forwards;
+  }
+
+  .navbar-brand >img:hover {
+    animation:  rotation 0.8s ease forwards;
+  }
+
+  .col-md-4> img:hover {
+    animation:   rotation 1s ease infinite forwards ;
+  }
+
+  .container {
+    animation: appear 2s ease ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+ 
+  @keyframes appear {
+from {
+  opacity: 0;
+ scale: 0.5;
+}
+
+to {
+  opacity: 1;
+  scale: 1;
+}
+  }
+
+  @keyframes rotation {
+    0% {
+      rotate: 0deg;
+      scale: 1;
+    }
+    50% {
+      scale: 0.8;
+    }
+    100% {
+    rotate: 360deg;
+    scale: 1;
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+  
+.meme-button {
+  position: relative;
+  padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.meme-button:hover {
+  transform: scale(1.01);
+}
+
+.meme-button img,
+.meme-button video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.meme-button video {
+  display: none;
+}
+
+.meme-button.active-video video {
+  display: block;
+}
